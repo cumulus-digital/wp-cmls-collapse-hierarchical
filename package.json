@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/cumulus-digital/wp-cmls-collapse-subpages/#readme",
   "devDependencies": {
-    "@wordpress/scripts": "^18.0.0",
+    "@wordpress/scripts": "^18.0.1",
     "bourbon": "^7.0.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20"

@@ -5,7 +5,7 @@
  * GitHub Plugin URI: https://github.com/cumulus-digital/wp-cmls-collapse-hierarchical/
  * Primary Branch: main
  * Description: Collapse heirarchical items (pages, categories).
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: vena
  * License: UNLICENSED
  * Requires at least: 5.6

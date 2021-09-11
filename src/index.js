@@ -245,7 +245,9 @@ let $j = jQuery.noConflict();
 			$title.text(
 				$title.text().replace(/— /g, '')
 			);
-			for (let i = 0; i < row.level; i++) {
+			// First bullet gets indented more
+			$title.before('&nbsp;<cite>•</cite>');
+			for (let i = 1; i < row.level; i++) {
 				$title.before('<cite>•</cite>');
 			}
 		}
@@ -254,8 +256,8 @@ let $j = jQuery.noConflict();
 			$row.addClass('wcc-has_children');
 			let $actor = $expander.clone(true).attr('title', row.children.length > 1 ? 'Toggle children' : 'Toggle child');
 			$title.before($actor);
-			$actor.after(
-				'<cite title="Item has ' +
+			$title.after(
+				' <cite title="Item has ' +
 				row.children.length +
 				(row.children.length > 1 ? ' children' : ' child') +
 				'.">(' +
